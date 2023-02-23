@@ -1,0 +1,1108 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='bank-full' inline='true' name='federated.14m4xvf1mklvfa10aj0il0dmy9xk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bank-full' name='textscan.0t7hsz11idak820zv5de1163r5lo'>
+            <connection class='textscan' directory='/Users/patricknaylor/Desktop/bank_dash/data/archive' filename='bank-full.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0t7hsz11idak820zv5de1163r5lo' name='bank-full.csv' table='[bank-full#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='string' name='job' ordinal='1' />
+            <column datatype='string' name='marital' ordinal='2' />
+            <column datatype='string' name='education' ordinal='3' />
+            <column datatype='string' name='default' ordinal='4' />
+            <column datatype='integer' name='balance' ordinal='5' />
+            <column datatype='string' name='housing' ordinal='6' />
+            <column datatype='string' name='loan' ordinal='7' />
+            <column datatype='string' name='contact' ordinal='8' />
+            <column datatype='integer' name='day' ordinal='9' />
+            <column datatype='string' name='month' ordinal='10' />
+            <column datatype='integer' name='duration' ordinal='11' />
+            <column datatype='integer' name='campaign' ordinal='12' />
+            <column datatype='integer' name='pdays' ordinal='13' />
+            <column datatype='integer' name='previous' ordinal='14' />
+            <column datatype='string' name='poutcome' ordinal='15' />
+            <column datatype='string' name='y' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0t7hsz11idak820zv5de1163r5lo' name='bank-full.csv' table='[bank-full#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+            <column datatype='integer' name='age' ordinal='0' />
+            <column datatype='string' name='job' ordinal='1' />
+            <column datatype='string' name='marital' ordinal='2' />
+            <column datatype='string' name='education' ordinal='3' />
+            <column datatype='string' name='default' ordinal='4' />
+            <column datatype='integer' name='balance' ordinal='5' />
+            <column datatype='string' name='housing' ordinal='6' />
+            <column datatype='string' name='loan' ordinal='7' />
+            <column datatype='string' name='contact' ordinal='8' />
+            <column datatype='integer' name='day' ordinal='9' />
+            <column datatype='string' name='month' ordinal='10' />
+            <column datatype='integer' name='duration' ordinal='11' />
+            <column datatype='integer' name='campaign' ordinal='12' />
+            <column datatype='integer' name='pdays' ordinal='13' />
+            <column datatype='integer' name='previous' ordinal='14' />
+            <column datatype='string' name='poutcome' ordinal='15' />
+            <column datatype='string' name='y' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>job</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marital]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>marital</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[education]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>education</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>default</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[default]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>default</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[balance]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>balance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>housing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[housing]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>housing</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[loan]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>loan</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contact]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>contact</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[campaign]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>campaign</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pdays</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pdays]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>pdays</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>previous</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>poutcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[poutcome]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>poutcome</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[bank-full.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+      </column>
+      <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[balance]' peg='0' size='500' />
+      </column>
+      <column caption='y_binary' datatype='integer' name='[Calculation_289004498521432064]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IIF([y] == &quot;no&quot;, 0, 1) * 100' />
+      </column>
+      <column caption='housing _binary' datatype='integer' name='[Calculation_289004498524413953]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IIF([housing] == &quot;Yes&quot;, 1, 0)' />
+      </column>
+      <column caption='duration_minutes' datatype='real' name='[Calculation_289004498548985860]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[duration]/60' />
+      </column>
+      <column caption='Campaign (bin)' datatype='integer' name='[Campaign (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[campaign]' peg='0' size='5' />
+      </column>
+      <column caption='Duration (bin)' datatype='integer' name='[Duration (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[duration]' peg='0' size='133' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='bank-full.csv' datatype='table' name='[__tableau_internal_object_id__].[bank-full.csv_AF4444FA1F194DF2A615131B32245F41]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+      <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+      <column caption='Contact' datatype='string' name='[contact]' role='dimension' type='nominal' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Default' datatype='string' name='[default]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='integer' name='[duration]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='duration_minutes (bin)' datatype='integer' name='[duration_minutes (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Calculation_289004498548985860]' peg='0' size='1' />
+      </column>
+      <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+      <column caption='Housing' datatype='string' name='[housing]' role='dimension' type='nominal' />
+      <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+      <column caption='Loan' datatype='string' name='[loan]' role='dimension' type='nominal' />
+      <column caption='Marital' datatype='string' name='[marital]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Pdays' datatype='integer' name='[pdays]' role='measure' type='quantitative' />
+      <column caption='Poutcome' datatype='string' name='[poutcome]' role='dimension' type='nominal' />
+      <column caption='Previous' datatype='integer' name='[previous]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='string' name='[y]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bank-full.csv' id='bank-full.csv_AF4444FA1F194DF2A615131B32245F41'>
+            <properties context=''>
+              <relation connection='textscan.0t7hsz11idak820zv5de1163r5lo' name='bank-full.csv' table='[bank-full#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+                  <column datatype='integer' name='age' ordinal='0' />
+                  <column datatype='string' name='job' ordinal='1' />
+                  <column datatype='string' name='marital' ordinal='2' />
+                  <column datatype='string' name='education' ordinal='3' />
+                  <column datatype='string' name='default' ordinal='4' />
+                  <column datatype='integer' name='balance' ordinal='5' />
+                  <column datatype='string' name='housing' ordinal='6' />
+                  <column datatype='string' name='loan' ordinal='7' />
+                  <column datatype='string' name='contact' ordinal='8' />
+                  <column datatype='integer' name='day' ordinal='9' />
+                  <column datatype='string' name='month' ordinal='10' />
+                  <column datatype='integer' name='duration' ordinal='11' />
+                  <column datatype='integer' name='campaign' ordinal='12' />
+                  <column datatype='integer' name='pdays' ordinal='13' />
+                  <column datatype='integer' name='previous' ordinal='14' />
+                  <column datatype='string' name='poutcome' ordinal='15' />
+                  <column datatype='string' name='y' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Conversion Rate of Different Professions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.14m4xvf1mklvfa10aj0il0dmy9xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14m4xvf1mklvfa10aj0il0dmy9xk'>
+            <column caption='y_binary' datatype='integer' name='[Calculation_289004498521432064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([y] == &quot;no&quot;, 0, 1) * 100' />
+            </column>
+            <column-instance column='[Calculation_289004498521432064]' derivation='Avg' name='[avg:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column caption='Job' datatype='string' name='[job]' role='dimension' type='nominal' />
+            <column-instance column='[job]' derivation='None' name='[none:job:nk]' pivot='key' type='nominal' />
+            <column caption='Y' datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d6e8d0</color>
+                <color>#bcdfb2</color>
+                <color>#a4d695</color>
+                <color>#8dcd7b</color>
+                <color>#78c462</color>
+                <color>#64bb4a</color>
+                <color>#51b235</color>
+                <color>#40a921</color>
+                <color>#30a00f</color>
+                <color>#229700</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' />
+              <color column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' />
+              <text column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:job:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{75125EAB-DC0C-488A-831E-F903D14AC5A2}' />
+    </worksheet>
+    <worksheet name='Conversion Rate vs Bank Balance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.14m4xvf1mklvfa10aj0il0dmy9xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14m4xvf1mklvfa10aj0il0dmy9xk'>
+            <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[balance]' peg='0' size='500' />
+            </column>
+            <column caption='y_binary' datatype='integer' name='[Calculation_289004498521432064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([y] == &quot;no&quot;, 0, 1) * 100' />
+            </column>
+            <column-instance column='[Calculation_289004498521432064]' derivation='Avg' name='[avg:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column caption='Balance' datatype='integer' name='[balance]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_289004498521432064]' derivation='Count' name='[cnt:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Balance (bin)]' derivation='None' name='[none:Balance (bin):ok]' pivot='key' type='ordinal' />
+            <column caption='Y' datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]' included-values='in-range'>
+            <min>50</min>
+            <max>33231</max>
+          </filter>
+          <slices>
+            <column>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]' max='2000' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]</rows>
+        <cols>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:Balance (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[Balance (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{5EC1996F-DAB5-41DE-BB32-2A8D35C43E6D}' />
+    </worksheet>
+    <worksheet name='Conversion rate of campaigns'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Conversion Rate vs Number of Contacts</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.14m4xvf1mklvfa10aj0il0dmy9xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14m4xvf1mklvfa10aj0il0dmy9xk'>
+            <column caption='y_binary' datatype='integer' name='[Calculation_289004498521432064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([y] == &quot;no&quot;, 0, 1) * 100' />
+            </column>
+            <column-instance column='[Calculation_289004498521432064]' derivation='Avg' name='[avg:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column-instance column='[campaign]' derivation='Count' name='[cnt:campaign:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:qk]' pivot='key' type='quantitative' />
+            <column caption='Y' datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:campaign:qk]' included-values='in-range'>
+            <min>100</min>
+          </filter>
+          <slices>
+            <column>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:campaign:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]' value='57' />
+            <format attr='title' class='0' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' scope='rows' value='Conversion Rate %' />
+            <format attr='title' class='0' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]' scope='cols' value='Number of Contacts' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='exp' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f1ce63' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]</rows>
+        <cols>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]</cols>
+      </table>
+      <simple-id uuid='{0E144AA7-FA75-4907-A546-73450552F6C1}' />
+    </worksheet>
+    <worksheet name='Number of Contacts per Age Group'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.14m4xvf1mklvfa10aj0il0dmy9xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14m4xvf1mklvfa10aj0il0dmy9xk'>
+            <column caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[age]' peg='0' size='5' />
+            </column>
+            <column caption='y_binary' datatype='integer' name='[Calculation_289004498521432064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([y] == &quot;no&quot;, 0, 1) * 100' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_289004498521432064]' derivation='Avg' name='[avg:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column caption='Campaign' datatype='integer' name='[campaign]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_289004498521432064]' derivation='Count' name='[cnt:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[campaign]' derivation='None' name='[none:campaign:qk]' pivot='key' type='quantitative' />
+            <column caption='Y' datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]' included-values='in-range'>
+            <min>3</min>
+          </filter>
+          <slices>
+            <column>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]' scope='rows' value='Number of Contacts' />
+            <encoding attr='space' class='0' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]' field-type='quantitative' max='34' min='0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:Age (bin):ok]' value='21' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='44' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:campaign:qk]</rows>
+        <cols>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{C9F8BEB7-7FA5-4FE1-972A-DD8A94644AAC}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.14m4xvf1mklvfa10aj0il0dmy9xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14m4xvf1mklvfa10aj0il0dmy9xk'>
+            <column caption='y_binary' datatype='integer' name='[Calculation_289004498521432064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([y] == &quot;no&quot;, 0, 1) * 100' />
+            </column>
+            <column caption='duration_minutes' datatype='real' name='[Calculation_289004498548985860]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[duration]/60' />
+            </column>
+            <column-instance column='[Calculation_289004498521432064]' derivation='Avg' name='[avg:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column caption='Duration' datatype='integer' name='[duration]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='duration_minutes (bin)' datatype='integer' name='[duration_minutes (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Calculation_289004498548985860]' peg='0' size='1' />
+            </column>
+            <column caption='Housing' datatype='string' name='[housing]' role='dimension' type='nominal' />
+            <column-instance column='[duration_minutes (bin)]' derivation='None' name='[none:duration_minutes (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[housing]' derivation='None' name='[none:housing:nk]' pivot='key' type='nominal' />
+            <column caption='Y' datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:duration_minutes (bin):ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='0' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='1' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='2' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='3' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='4' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='5' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='6' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='7' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='8' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='9' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='10' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='11' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='12' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='13' />
+              <groupfilter function='member' level='[none:duration_minutes (bin):ok]' member='14' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:duration_minutes (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:housing:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]</rows>
+        <cols>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:duration_minutes (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{4780DD73-5FF1-494A-AFE7-67186D92F5FC}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bank-full' name='federated.14m4xvf1mklvfa10aj0il0dmy9xk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14m4xvf1mklvfa10aj0il0dmy9xk'>
+            <column caption='y_binary' datatype='integer' name='[Calculation_289004498521432064]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([y] == &quot;no&quot;, 0, 1) * 100' />
+            </column>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_289004498521432064]' derivation='Avg' name='[avg:Calculation_289004498521432064:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age]' derivation='None' name='[none:age:qk]' pivot='key' type='quantitative' />
+            <column caption='Y' datatype='string' name='[y]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]</rows>
+        <cols>[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:age:qk]</cols>
+      </table>
+      <simple-id uuid='{ECA59062-C0C5-4168-B01A-AB2E7A996D79}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Conversion rate of campaigns' w='41200' x='42000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39625' id='9' name='Conversion Rate of Different Professions' w='41200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40875' id='11' name='Conversion Rate vs Bank Balance' w='41200' x='42000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='13' name='Number of Contacts per Age Group' w='41200' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8125' id='12' name='Conversion Rate vs Bank Balance' pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]' type-v2='color' w='41200' x='42000' y='90875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9375' id='10' name='Conversion Rate of Different Professions' pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' type-v2='color' w='41200' x='800' y='40625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='2750' id='8' name='Conversion rate of campaigns' pane-specification-id='2' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:campaign:qk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Conversion Rate of Different Professions' w='41200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='10' name='Conversion Rate of Different Professions' pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' type-v2='color' w='16000' x='83200' y='9125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Conversion rate of campaigns' w='41200' x='42000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='8' name='Conversion rate of campaigns' pane-specification-id='2' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:campaign:qk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='13' is-fixed='true' name='Number of Contacts per Age Group' w='41200' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='11' is-fixed='true' name='Conversion Rate vs Bank Balance' w='41200' x='42000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='12' name='Conversion Rate vs Bank Balance' pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]' type-v2='color' w='16000' x='83200' y='17250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9ADD0706-E2D2-48A5-A98F-71234066AF85}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Conversion rate of campaigns'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEAA9B21-F19B-453F-9C3F-4E8560D478C4}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Conversion Rate of Different Professions' />
+        <viewpoint name='Conversion Rate vs Bank Balance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Conversion rate of campaigns'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Contacts per Age Group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CCD190F8-AB80-4441-A6C3-0B0570970A32}' />
+    </window>
+    <window class='worksheet' name='Conversion Rate of Different Professions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBEB440F-BE60-4609-A44B-173F92A6B2C9}' />
+    </window>
+    <window class='worksheet' name='Conversion Rate vs Bank Balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[cnt:Calculation_289004498521432064:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{C9CF147C-46A4-465D-A20A-A60A21A5515B}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[none:housing:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB10B665-00F3-4749-9F1C-D0F158F4B695}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Number of Contacts per Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14m4xvf1mklvfa10aj0il0dmy9xk].[avg:Calculation_289004498521432064:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03DD7F4D-50C9-43FD-9FD3-9B933E31571E}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58B07DC2-4DBC-4366-9AA2-47B4CBF31AE7}' />
+    </window>
+  </windows>
+</workbook>
